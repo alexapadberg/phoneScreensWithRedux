@@ -8,26 +8,24 @@ const addRecordingsStyle = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'left'
     },
-    title: {
+    titles: {
         flex: 1,
         alignItems: 'left',
         justifyContent: 'center'
     }
-})
-export default function AddRecordings(){
+});
+
+function AddRecordings(){
     //const dispatch = useDispatch();
     const navigation = useNavigation();
-    return (
-
-        <View style={addRecordingsStyle.homeButton}>
-            <Button
-                title="back home"
-                onPress={() => navigation.navigate('Home')}
-                color= '#1953B7'
-            />
-            <View  style={{addRecordingsStyle.title}}/>
-            <Text>Add Recording Screen</Text>
-        </View>
-
-    );
+    return <View style={addRecordingsStyle.homeButton}>
+        <Button
+            title="back home"
+            onPress={() => this.props.navigation.navigate('HomeScreen')}
+            color= '#1953B7'/>
+        <View  style={addRecordingsStyle.titles}/>
+        <Text>Add Recording Screen</Text>
+    </View>;
 }
+
+export default AddRecordings

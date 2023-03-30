@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import { FriendsContext } from './FriendsContext';
 
 class HomeScreen extends React.Component {
+    
     render() {
         return (
             <View style={styles.container}>
