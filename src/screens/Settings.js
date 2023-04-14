@@ -4,14 +4,13 @@ import {useNavigation} from "@react-navigation/native";
 
 const SettingsStyle = StyleSheet.create({
     container: {
-        flex: .5,
-        alignItems: 'center',
-        justifyContent: 'left'
+        alignItems: 'flex-start',
+        justifyContent: 'flex-end'
     },
     screenTitle: {
         flex: 1,
-        alignItems: 'left',
-        justifyContent: 'center'
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start'
     }
 
 });

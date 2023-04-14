@@ -5,17 +5,19 @@ import {useNavigation} from "@react-navigation/native";
 const addRecordingsStyle = StyleSheet.create({
     homeButton: {
         flex: .5,
-        alignItems: 'center',
-        justifyContent: 'left'
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start'
     },
     titles: {
         flex: 1,
-        alignItems: 'left',
-        justifyContent: 'center'
+        alignItems: 'flex-start',
+        justifyContent: 'flex-end'
     }
 });
 
-function AddRecordings(){
+
+
+function AddRecordings(props){
     //const dispatch = useDispatch();
     const navigation = useNavigation();
     return <View style={addRecordingsStyle.homeButton}>
